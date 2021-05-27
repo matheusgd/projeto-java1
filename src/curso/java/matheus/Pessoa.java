@@ -8,7 +8,9 @@ public class Pessoa {
     private String sobrenome;
     private int idade;
     private Date dataNascimento;
-    // git ignore 2
+    private Date dataCadastro;
+    private String cpf;
+    private String cor;
 
     public String getNome() {
         return nome;
@@ -38,5 +40,25 @@ public class Pessoa {
         return dataNascimento;
     }
 
+    public Date getDataCadastro() {
+        return dataCadastro;
+    }
+    public void setDataCadastro(Date dataCadastro) {
+        this.dataCadastro = dataCadastro;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
 }
 
