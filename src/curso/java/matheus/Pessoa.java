@@ -8,6 +8,7 @@ public class Pessoa {
     private String sobrenome;
     private int idade;
     private Date dataNascimento;
+    // git ignore
 
     public String getNome() {
         return nome;
