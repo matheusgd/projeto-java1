@@ -18,19 +18,19 @@ public class MediaNotaJOptionPane {
 
         double media = (dNota1 + dNota2 + dNota3 + dNota4) / 4;
 
-        int resposta = JOptionPane.showConfirmDialog(null,"Deseja ver sua Média?");
+        int resposta = JOptionPane.showConfirmDialog(null, "Deseja ver sua Média?");
 
-        if (resposta == 0){
-            if (media >= 50){
-                if (media >= 90){
+        if (resposta == 0) {
+            if (media >= 50) {
+                if (media >= 90) {
                     JOptionPane.showMessageDialog(null, "Você está APROVADO com Sucesso, PARABÉNS!");
                 } else {
                     JOptionPane.showMessageDialog(null, "Você está APROVADO!");
                 }
-            }else {
+            } else {
                 JOptionPane.showMessageDialog(null, "Você está REPROVADO!");
             }
-        }else{
+        } else {
             System.out.println("Não quiz ver a média!");
         }
 
