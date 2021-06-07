@@ -1,4 +1,4 @@
-package curso.java.classespoo;
+package curso.java.classepoo;
 
 public class Aluno {
 
