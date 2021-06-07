@@ -1,5 +1,5 @@
 /* Operador Switch e Case [Modulo 8.4] */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class SwitchCase {
 

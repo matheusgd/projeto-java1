@@ -1,5 +1,5 @@
 /* JDEV Treinamentos - Operações entre números, Programa do média notas [módulo 7.6 e 7.7] */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class MediaNota {
 

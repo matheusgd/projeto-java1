@@ -1,6 +1,6 @@
 /*JDEV Treinamentos Aula [8.1 e 8.2]
 * Condicionais IF e ELSE e Operadores ternários*/
-package curso.java.matheus;
+package curso.java.basico;
 
 public class Condicionais {
 

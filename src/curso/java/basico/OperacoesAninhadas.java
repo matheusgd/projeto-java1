@@ -1,5 +1,5 @@
 /* Operações Aninhadas IF e ELSE [Modulo 8.3]*/
-package curso.java.matheus;
+package curso.java.basico;
 
 public class OperacoesAninhadas {
 

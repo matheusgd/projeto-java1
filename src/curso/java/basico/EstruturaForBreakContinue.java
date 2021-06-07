@@ -1,5 +1,5 @@
 /* Estrutura de Repetição FOR com BREAK (Parada) e CONTINUE [Módulo 8.8 e 8.9] */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class EstruturaForBreakContinue {
 

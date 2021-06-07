@@ -1,5 +1,5 @@
 /*JDEV Treinamentos - Aula sobre Estruturas de declaração de variáveis [modulo 7.4 e 7.5] */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class Variaveis {
 

@@ -5,7 +5,7 @@
 > Maior
 <= Menor ou Igual
 >= Maior ou Igual */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class OperadoresRelacionais {
 

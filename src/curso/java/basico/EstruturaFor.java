@@ -1,5 +1,5 @@
 /* Estrutura de Repetição FOR [Módulo 8.7] */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class EstruturaFor {
 

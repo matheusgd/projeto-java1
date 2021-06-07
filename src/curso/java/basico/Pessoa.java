@@ -1,4 +1,4 @@
-package curso.java.matheus;
+package curso.java.basico;
 
 import java.util.Date;
 

@@ -1,6 +1,6 @@
 /* Divisões e Resto com MOD Java e Entrada e Saida de dados [Módulo 8.10 e 8.11]
 * Modulo resto - %  */
-package curso.java.matheus;
+package curso.java.basico;
 
 import javax.swing.*;
 

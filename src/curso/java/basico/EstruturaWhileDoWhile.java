@@ -1,5 +1,5 @@
 /* Estrutura de repetição While e Do While [Modulo 8.6] */
-package curso.java.matheus;
+package curso.java.basico;
 
 public class EstruturaWhileDoWhile {
 
