@@ -1,30 +1,52 @@
+/* Modulo [9.6 a 9.14]*/
 package curso.java.poo;
 
-public class ClasseExecutavel {
+import javax.swing.*;
+
+public class AlunoExecutavel {
 
     public static void main(String[] args) {
 
         /* new Aluno() é a instância do objeto (sua criação) */
         /* aluno1 seria uma referencia para o objeto Aluno */
-        System.out.println("-------------CADASTRO DE ALUNOS COM GET E SET----------------");
+        System.out.println("------------------CADASTRO DE ALUNOS COM GET, SET, JOptionPane---------------------");
 
-        Aluno aluno1 = new Aluno(); /* Aqui será o João */
+        // Instânciando o novo Objeto Aluno1
+        Aluno aluno1 = new Aluno();
 
-        aluno1.setNome("João da Silva");
-        aluno1.setIdade(14);
-        aluno1.setDataNascimento("01/01/2007");
-        aluno1.setRegistroGeral("12358742");
-        aluno1.setNumeroCpf("852.761.894-50");
-        aluno1.setNomeMae("Josefina Pereira da Silva");
-        aluno1.setNomePai("Francisco da Silva");
-        aluno1.setDataMatricula("07/06/2021");
-        aluno1.setNomeEscola("CEF 103");
-        aluno1.setSerieMatriculado("9º Ano");
-        aluno1.setNota1(80.5);
-        aluno1.setNota2(90.2);
-        aluno1.setNota3(70.1);
-        aluno1.setNota4(75.8);
+        // Recebendo informações através de entrada de dados do usuário (Input com Interface gráfica)
+        String nome = JOptionPane.showInputDialog("Qual seu nome? "); // Recebendo com JOptionPane e passando para variável nome
+        String idade = JOptionPane.showInputDialog("Qual sua idade? ");
+        String dtNasc = JOptionPane.showInputDialog("Data de Nascimento: ");
+        String rg = JOptionPane.showInputDialog("RG: ");
+        String cpf = JOptionPane.showInputDialog("CPF: ");
+        String mae = JOptionPane.showInputDialog("Nome da mãe: ");
+        String pai = JOptionPane.showInputDialog("Nome do pai: ");
+        String dtMat = JOptionPane.showInputDialog("Data da matricula: ");
+        String escola = JOptionPane.showInputDialog("Nome da escola: ");
+        String serie = JOptionPane.showInputDialog("Série atual: ");
+        String nota1 = JOptionPane.showInputDialog("Nota 1: ");
+        String nota2 = JOptionPane.showInputDialog("Nota 2: ");
+        String nota3 = JOptionPane.showInputDialog("Nota 3: ");
+        String nota4 = JOptionPane.showInputDialog("Nota 4: ");
 
+        // Passando a informação recebida para o método Setter (setando a informação na variável lá na outra classe Aluno)
+        aluno1.setNome(nome);
+        aluno1.setIdade(Integer.parseInt(idade)); // Integer.parseInt - converte String em Int
+        aluno1.setDataNascimento(dtNasc);
+        aluno1.setRegistroGeral(rg);
+        aluno1.setNumeroCpf(cpf);
+        aluno1.setNomeMae(mae);
+        aluno1.setNomePai(pai);
+        aluno1.setDataMatricula(dtMat);
+        aluno1.setNomeEscola(escola);
+        aluno1.setSerieMatriculado(serie);
+        aluno1.setNota1(Double.parseDouble(nota1)); // Double.parseDouble - converte String em Double
+        aluno1.setNota2(Double.parseDouble(nota2));
+        aluno1.setNota3(Double.parseDouble(nota3));
+        aluno1.setNota4(Double.parseDouble(nota4));
+
+        // Mostrando as informações na tela para o usuário
         System.out.println("ALUNO 1 Nome = " + aluno1.getNome());
         System.out.println("ALUNO 1 Idade = " + aluno1.getIdade());
         System.out.println("ALUNO 1 Data Nascimento = " + aluno1.getDataNascimento());
@@ -38,9 +60,11 @@ public class ClasseExecutavel {
         System.out.println("ALUNO 1 Média de notas = " + aluno1.getMediaNota());
         System.out.println("ALUNO 1 Resultado = " + (aluno1.getAlunoAprovado() ? "Aluno Aprovado" : "Aluno Reprovado"));
         System.out.println("ALUNO 1 Resultado 2 = " + aluno1.getAlunoAprovado2());
-        System.out.println("------------------------------------------------------------------");
+        System.out.println("--------------------------------------------------------------------------");
 
-        Aluno aluno2 = new Aluno(); /* Aqui será o Pedro */
+        /* Mesmo processo acima, porém sem receber interação do usuário
+
+        Aluno aluno2 = new Aluno(); //Aqui será o Pedro
 
         aluno2.setNome("Pedro Nascimento");
         aluno2.setIdade(15);
@@ -72,12 +96,12 @@ public class ClasseExecutavel {
         System.out.println("ALUNO 2 Resultado 2 = " + aluno2.getAlunoAprovado2());
         System.out.println("------------------------------------------------------------------");
 
+        */
+
+        // Outros exemplo de criação de Objetos
         Aluno aluno3 = new Aluno(); /* Construtor padrão*/
-
         Aluno aluno4 = new Aluno("Maria"); /* Construtor com 1 parametro*/
-
         Aluno aluno5 = new Aluno("José", 40); /* Construtor com 2 parametros */
-
 
     }
 
