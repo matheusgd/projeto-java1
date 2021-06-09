@@ -1,4 +1,4 @@
-package curso.java.basico;
+package curso.java.lanchonete.basico;
 
 import java.util.Scanner;
 
