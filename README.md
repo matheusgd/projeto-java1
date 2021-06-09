@@ -21,7 +21,7 @@ do<br> curso de Formação Java Web Full-Stack da JDEV Treinamentos
 ### Programação Orientada a Objetos com JAVA
 * Introdução a Programação Orientada a Objetos
 * Diferença entre estrutura Procedural e Orientada a Objetos
-* Caracteristicas dos Objetos
+* Características dos Objetos
 * Classes (Sistemas), Métodos (Ações) e Atributos (Características)
 * Método Construtor
 * Instânciação de Objetos
