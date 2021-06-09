@@ -98,10 +98,35 @@ public class AlunoExecutavel {
 
         */
 
+        /*
         // Outros exemplo de criação de Objetos
-        Aluno aluno3 = new Aluno(); /* Construtor padrão*/
-        Aluno aluno4 = new Aluno("Maria"); /* Construtor com 1 parametro*/
-        Aluno aluno5 = new Aluno("José", 40); /* Construtor com 2 parametros */
+        Aluno aluno3 = new Aluno(); // Construtor padrão
+        Aluno aluno4 = new Aluno("Maria"); // Construtor com 1 parametro
+        Aluno aluno5 = new Aluno("José", 40); // Construtor com 2 parametros
+         */
+
+        // Printando o método toString que retorna dados de todos os atributos
+        System.out.println(aluno1); // pirnt nome do objeto = Descreve o objeto e seu endereço na mamória
+        System.out.println(aluno1.getMediaNota());
+        System.out.println(aluno1.getAlunoAprovado());
+
+        // Utilizanbdo o equals e hash code para testar coteudos da variável
+        Aluno aluno6 = new Aluno();
+        Aluno aluno7 = new Aluno();
+
+        aluno6.setNome("Matheus");
+        aluno6.setNumeroCpf("123");
+
+        aluno7.setNome("Matheus");
+        aluno7.setNumeroCpf("123");
+
+        //São variáveis com coteúdo igual?
+        if(aluno6.equals(aluno7)){
+            System.out.println("Aluno Igual");
+        }else {
+            System.out.println("Aluno Diferente");
+        }
+
 
     }
 

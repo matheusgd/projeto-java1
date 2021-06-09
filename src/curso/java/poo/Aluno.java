@@ -1,5 +1,7 @@
 package curso.java.poo;
 
+import java.util.Objects;
+
 public class Aluno {
 
     /* Atributos da classe Aluno (Características)*/
@@ -148,12 +150,12 @@ public class Aluno {
         this.nota4 = nota4;
     }
 
-    /* Método retornando o resultado da média */
-    public double getMediaNota() { /* Não precisa criar o set de Média Nota pois o mesmo não vai settar nada*/
+    // Método retornando o resultado da média
+    public double getMediaNota() { //Não precisa criar o set de Média Nota pois o mesmo não vai settar nada
         return (nota1 + nota2 + nota2 + nota4) / 4;
     }
 
-    /* Métodos para fazer o teste da média, se o aluno está aprovado ou não*/
+    //Métodos para fazer o teste da média, se o aluno está aprovado ou não
     public boolean getAlunoAprovado() {
         double media = this.getMediaNota();
 
@@ -173,5 +175,41 @@ public class Aluno {
         }else {
             return "O Aluno está reprovado";
         }
+    }
+
+    // Invocando o toString, ele é gerado para reunir a informações de todos os atributos
+    @Override
+    public String toString() {
+        return "Aluno{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", registroGeral='" + registroGeral + '\'' +
+                ", numeroCpf='" + numeroCpf + '\'' +
+                ", nomeMae='" + nomeMae + '\'' +
+                ", nomePai='" + nomePai + '\'' +
+                ", dataMatricula='" + dataMatricula + '\'' +
+                ", nomeEscola='" + nomeEscola + '\'' +
+                ", serieMatriculado='" + serieMatriculado + '\'' +
+                ", nota1=" + nota1 +
+                ", nota2=" + nota2 +
+                ", nota3=" + nota3 +
+                ", nota4=" + nota4 +
+                '}';
+    }
+
+    // Utilizanbdo o equals e hash code para testar coteudos
+    // da variável, verificação se são iguais ou não
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Aluno aluno = (Aluno) o;
+        return nome.equals(aluno.nome) && numeroCpf.equals(aluno.numeroCpf);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nome, numeroCpf);
     }
 }
