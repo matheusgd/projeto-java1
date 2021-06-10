@@ -6,7 +6,8 @@ public class MenuExecutavel {
 
         Menu menu1 = new Menu();
 
-        System.out.println(menu1);
+        System.out.println(menu1.listarMenu());
+
 
     }
 
