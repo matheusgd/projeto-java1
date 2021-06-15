@@ -15,10 +15,9 @@ public class Aluno {
     private String dataMatricula;
     private String nomeEscola;
     private String serieMatriculado;
-    private double nota1;
-    private double nota2;
-    private double nota3;
-    private double nota4;
+
+    private Disciplina disciplina = new Disciplina();
+
 
 
     /* Construtor Padrão
@@ -118,41 +117,17 @@ public class Aluno {
         this.serieMatriculado = serieMatriculado;
     }
 
-    public double getNota1() {
-        return nota1;
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
     }
 
-    public void setNota1(double nota1) {
-        this.nota1 = nota1;
-    }
-
-    public double getNota2() {
-        return nota2;
-    }
-
-    public void setNota2(double nota2) {
-        this.nota2 = nota2;
-    }
-
-    public double getNota3() {
-        return nota3;
-    }
-
-    public void setNota3(double nota3) {
-        this.nota3 = nota3;
-    }
-
-    public double getNota4() {
-        return nota4;
-    }
-
-    public void setNota4(double nota4) {
-        this.nota4 = nota4;
+    public Disciplina getDisciplina() {
+        return disciplina;
     }
 
     // Método retornando o resultado da média
     public double getMediaNota() { //Não precisa criar o set de Média Nota pois o mesmo não vai settar nada
-        return (nota1 + nota2 + nota2 + nota4) / 4;
+        return (disciplina.getNota1() + disciplina.getNota2() + disciplina.getNota3() + disciplina.getNota4()) / 4;
     }
 
     //Métodos para fazer o teste da média, se o aluno está aprovado ou não
@@ -191,10 +166,7 @@ public class Aluno {
                 ", dataMatricula='" + dataMatricula + '\'' +
                 ", nomeEscola='" + nomeEscola + '\'' +
                 ", serieMatriculado='" + serieMatriculado + '\'' +
-                ", nota1=" + nota1 +
-                ", nota2=" + nota2 +
-                ", nota3=" + nota3 +
-                ", nota4=" + nota4 +
+                ", disciplina=" + disciplina +
                 '}';
     }
 
